@@ -1,22 +1,23 @@
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6">
-      <div className="text-center">
-        <h1 className="text-5xl font-bold mb-4">
-          Hola, soy <span className="text-yellow-400">Pablo</span>
+    <section className="min-h-screen flex items-center px-6 pt-20">
+      <div className="max-w-5xl mx-auto w-full">
+        <p className="text-yellow-400 text-lg mb-4 tracking-widest uppercase">Hola, soy</p>
+        <h1 className="text-7xl md:text-9xl font-black text-white leading-none mb-6">
+          Pablo
         </h1>
-        <p className="text-xl text-gray-400 mb-2">
-          Diseñador Industrial & Desarrollador Web
+        <p className="text-2xl md:text-3xl text-gray-400 font-light mb-8">
+          Diseñador Industrial <span className="text-white">&</span> Desarrollador Web
         </p>
-        <p className="text-gray-500 max-w-lg mx-auto mb-8">
-          Combino el diseño 3D y la ingeniería con el desarrollo web. 
-          AutoCAD · Revit · Navisworks · React
+        <p className="text-gray-500 max-w-xl text-lg mb-10">
+          Combino el mundo del diseño 3D industrial con el desarrollo web. 
+          Desde modelos BIM hasta aplicaciones React.
         </p>
-        <div className="flex gap-4 justify-center">
-          <a href="#projects" className="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">
+        <div className="flex gap-4">
+          <a href="#projects" className="bg-yellow-400 text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 transition">
             Ver proyectos
           </a>
-          <a href="#contact" className="border border-yellow-400 text-yellow-400 px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 hover:text-black transition">
+          <a href="#contact" className="border border-gray-700 text-gray-400 px-8 py-4 rounded-full font-bold text-lg hover:border-yellow-400 hover:text-yellow-400 transition">
             Contacto
           </a>
         </div>
