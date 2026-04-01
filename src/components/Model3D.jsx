@@ -24,7 +24,7 @@ class ErrorBoundary extends Component {
 
 const GLBModel = () => {
   const { scene } = useGLTF('/gbl/model3D.glb')
-  return <primitive object={scene} scale={0.01} />
+  return <primitive object={scene} scale={0.7} />
 }
 
 const Model3D = () => {
@@ -37,14 +37,14 @@ const Model3D = () => {
 
         <div className="bg-gray-900 rounded-2xl overflow-hidden" style={{ height: '500px' }}>
           <ErrorBoundary>
-            <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
-              <ambientLight intensity={0.5} />
-              <directionalLight position={[10, 10, 5]} intensity={1} />
-              <Suspense fallback={null}>
-                <GLBModel />
-              </Suspense>
-              <OrbitControls />
-            </Canvas>
+<Canvas camera={{ position: [5, 5, 5], fov: 75 }}>
+  <ambientLight intensity={0.5} />
+  <directionalLight position={[10, 10, 5]} intensity={1} />
+  <Suspense fallback={null}>
+    <GLBModel />
+  </Suspense>
+  <OrbitControls makeDefault autoRotate={false} />
+</Canvas>
           </ErrorBoundary>
         </div>
         <p className="text-gray-500 text-sm mt-4 text-center">
