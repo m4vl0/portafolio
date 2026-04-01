@@ -1,7 +1,7 @@
 const skills = [
-  { name: "AutoCAD", icon: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Autodesk_AutoCAD_logo.svg" },
-{ name: "Revit", icon: "https://upload.wikimedia.org/wikipedia/commons/8/85/Revit-logo.svg" },
-{ name: "Navisworks", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Navisworks_2024_lockup_OL_no_year_stacked.svg/250px-Navisworks_2024_lockup_OL_no_year_stacked.svg.png" },
+{ name: "AutoCAD", icon: "/img/autocad.png" },
+{ name: "Revit", icon: "/img/revit.png" },
+{ name: "Navisworks", icon: "/img/navisworks.png" },
   { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
   { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
   { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
@@ -18,7 +18,7 @@ const Skills = () => {
           Tech <span className="text-yellow-400">Stack</span>
         </h2>
 
-        <div className="grid grid-cols-4 md:grid-cols-9 gap-6">
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-8">
           {skills.map((skill) => (
             <div key={skill.name} className="flex flex-col items-center gap-2 group">
               <div className="bg-gray-900 p-4 rounded-2xl group-hover:bg-gray-800 transition flex items-center justify-center w-16 h-16">
